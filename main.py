@@ -69,7 +69,7 @@ def handle_client(conn, addr, log_file):
 
             # Формируем ответ: зеркальная строка + информация о сервере
             mirrored = mirror_string(data)
-            response = f"{mirrored}. Сервер написан Исаевым М.А. М3О-111БВ-24\n"
+            response = f"{mirrored}. Сервер написан Исаевым М.А.\n"
 
             # Отправляем ответ клиенту
             conn.send(response.encode('utf-8'))
@@ -121,3 +121,4 @@ def run_server():
 
 if __name__ == "__main__":
     run_server()
+
